@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Fuggles&family=Kranky&family=Yuji+Boku&display=swap');
+/*Caesar Dressing // Fuggles // Kranky // Yuji+Boku*/
+
+:root{
+  --color-1: #444f37;
+  --color-2: rgb(96, 78, 24);
+  --color-3: #b7bc90;
+  --color-4: #3b3712;
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-family: "Caesar Dressing";
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main{
+    background-color: var(--color-3);
+    max-width: 80%;
+    font-size: small;
+    padding: 2% 5%;
+    outline: dashed 4px var(--color-3);
+    border: dashed 3px var(--color-2);
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }

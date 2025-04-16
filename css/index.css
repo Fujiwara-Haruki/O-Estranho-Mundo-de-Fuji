@@ -1,0 +1,40 @@
+.titulo{
+    text-align: center;
+}
+
+.placa-perigo{
+    max-width: 500px;
+    width: 60%;
+}
+
+.div-placa{
+    display: flex;
+
+}
+
+.placa-amarela{
+    max-width: 500px;
+    width: 15vw;
+    rotate: -10deg;
+
+}
+
+.placa-2{
+    rotate: 10deg;
+}
+
+.div-img{
+    display: flex;
+    justify-content: center;
+}
+
+.p-meio{
+    text-align: center;
+    color: var(--color-4);
+    font-size: 15px;
+    background-color: rgb(210, 210, 5);
+    padding: 10px;
+    align-items: center;
+    font-family: "kranky";
+    font-weight: 600;
+}
