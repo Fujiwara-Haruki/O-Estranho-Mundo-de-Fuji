@@ -3,29 +3,123 @@
 
 :root{
   --color-1: #444f37;
-  --color-2: rgb(96, 78, 24);
+  --color-2: rgb(232, 249, 212);
   --color-3: #b7bc90;
   --color-4: #3b3712;
 }
 
 body {
-    background-color: var(--color-1);
-    color: var(--color-2);
+    background-image: url(../images/japan-cloth.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    color: var(--color-1);
     font-family: "Caesar Dressing";
-    min-height: 98vh;
+    min-height: 100%;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+
   }
 
   main{
-    background-color: var(--color-3);
-    max-width: 80%;
-    font-size: small;
-    padding: 2% 5%;
-    outline: dashed 4px var(--color-3);
-    border: dashed 3px var(--color-2);
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content: start;
+    padding: 5px 0px;
+
+    outline: dashed 4px var(--color-2);
+
+    grid-template-columns: 20vw 55vw 15vw;
+    grid-template-rows: 10vw 10vw 50vw 10vw;
+    grid-template-areas: 
+        "logo nav nav"
+        "logo content advert"
+        "sidenav content advert"
+        "sidenav footer footer"
+    ;
   }
+
+  .logo{
+    position: relative;
+    grid-area: logo;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 3px var(--color-1);
+  }
+
+  .logo:hover .link-picrew{
+    transform: rotate(7deg);
+    opacity: 80%;
+    cursor: pointer;
+  }
+
+  .logo:hover .eu{
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+
+  .link-picrew{
+    color: var(--color-2);
+    background-color: var(--color-1);
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: rotate(0deg);
+
+
+    font-family: Kranky;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+
+  .nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    
+    background-color: var(--color-3);
+  }
+
+  .content{
+    grid-area: content;
+
+    border: dashed 3px var(--color-1);
+    background-color: var(--color-3);
+  }
+
+.sidenav{
+  grid-area: sidenav;
+
+  border: dashed 3px var(--color-1);
+  background-color: var(--color-3);
+}
+
+.advert{
+  grid-area: advert;
+
+  border: dashed 3px var(--color-1);
+  background-color: var(--color-3);
+}
+
+.footer{
+  grid-area: footer;
+
+  border: dashed 3px var(--color-1);
+  background-color: var(--color-3);
+}
+
+.item{
+  margin: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+

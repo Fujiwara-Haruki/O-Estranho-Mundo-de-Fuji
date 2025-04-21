@@ -1,40 +1,43 @@
+.eu{
+    width: 92%;
+    height: 92%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
 .titulo{
-    text-align: center;
+    font-size: xx-large;
+    color: var(--color-2);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--color-1);
 }
 
-.placa-perigo{
-    max-width: 500px;
-    width: 60%;
-}
-
-.div-placa{
-    display: flex;
-
+.titulo2{
+    font-size: 1.2rem;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: var(--color-1);
 }
 
 .placa-amarela{
-    max-width: 500px;
-    width: 15vw;
-    rotate: -10deg;
-
+    width: 25%;
 }
 
-.placa-2{
-    rotate: 10deg;
+.nav{
+    background-image: url(../images/fita-listrada.png);
+    background-size: cover;
+    background-blend-mode:color-burn;
 }
 
-.div-img{
-    display: flex;
-    justify-content: center;
+ul{
+    padding: 0px 25px;
+    list-style-type: circle;
+    list-style-position: outside;
+
+    text-align: left;
+    font-size: small;
 }
 
-.p-meio{
-    text-align: center;
-    color: var(--color-4);
-    font-size: 15px;
-    background-color: rgb(210, 210, 5);
-    padding: 10px;
-    align-items: center;
-    font-family: "kranky";
-    font-weight: 600;
+ul > li{
+    margin: 5px 0px;
 }
