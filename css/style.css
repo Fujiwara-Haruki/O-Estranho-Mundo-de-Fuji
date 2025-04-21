@@ -22,25 +22,6 @@ body {
 
   }
 
-  main{
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    align-content: start;
-    padding: 5px 0px;
-
-    outline: dashed 4px var(--color-2);
-
-    grid-template-columns: 20vw 55vw 15vw;
-    grid-template-rows: 10vw 10vw 50vw 10vw;
-    grid-template-areas: 
-        "logo nav nav"
-        "logo content advert"
-        "sidenav content advert"
-        "sidenav footer footer"
-    ;
-  }
-
   .logo{
     position: relative;
     grid-area: logo;
@@ -98,7 +79,11 @@ body {
 
 .sidenav{
   grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
 
+  padding: 0px 20px;
+  align-items: start;
   border: dashed 3px var(--color-1);
   background-color: var(--color-3);
 }
@@ -123,3 +108,79 @@ body {
   font-size: 1rem;
 }
 
+a{
+  color: var(--color-1)
+}
+
+/*----------------------------------------------*/
+
+.titulo{
+  font-size: xx-large;
+  color: var(--color-2);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-1);
+}
+
+.titulo2{
+  font-size: 1.2rem;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: var(--color-1);
+}
+
+.placa-amarela{
+  width: 25%;
+}
+
+.nav{
+  background-image: url(../images/fita-listrada.png);
+  background-size: cover;
+  background-blend-mode:color-burn;
+}
+
+.advert > ul{
+  padding: 0px 25px;
+  list-style-type: circle;
+  list-style-position: outside;
+
+  text-align: left;
+  font-size: small;
+}
+
+.advert > ul > li{
+  margin: 5px 0px;
+}
+
+.sidenav{
+  font-family: "Caesar Dressing";
+}
+
+.sidenav > ul{
+  margin: 0px;
+  padding: 0px 8%;
+  list-style-position: outside;
+  list-style-type: none;
+  
+}
+
+.sidenav > ul > li{
+  margin: 15px 0px; 
+  width: 100%;
+  
+}
+
+.sidenav > ul > li > a{
+  text-decoration: none;
+  background-color: var(--color-2);
+  border-radius: 10px;
+  
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+}
+
+.sidenav > ul > li > a:hover{
+  transform: scale(1.1);
+  color: var(--color-2);
+  background-color: var(--color-1);
+}

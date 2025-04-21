@@ -1,0 +1,18 @@
+main{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content: start;
+    padding: 5px 0px;
+
+    outline: dashed 4px var(--color-2);
+
+    grid-template-columns: 20vw 55vw 15vw;
+    grid-template-rows: 10vw 10vw 50vw 10vw;
+    grid-template-areas: 
+        "logo nav nav"
+        "logo content advert"
+        "sidenav content advert"
+        "sidenav footer footer"
+    ;
+}
