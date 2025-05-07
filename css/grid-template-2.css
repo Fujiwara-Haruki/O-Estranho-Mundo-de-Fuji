@@ -10,9 +10,38 @@ main{
     grid-template-columns: 20vw 55vw 15vw;
     grid-template-rows: 10vw 10vw 50vw 10vw;
     grid-template-areas: 
-        "logo nav nav"
-        "logo content advert"
+        "nav nav nav"
+        "sidenav content advert"
         "sidenav content advert"
         "sidenav footer footer"
     ;
+}
+
+.nav{
+    background-color: transparent;
+    background-image: none;
+    font-size: xx-large;
+    color: var(--color-1);
+    -webkit-text-stroke-color: var(--color-2);
+    -webkit-text-stroke-width: 2px;
+}
+
+.sidenav, .advert{
+    background-color: var(--color-5);
+    border-color: var(--color-6);
+}
+
+.content{
+    background-color: var(--color-7);
+    border-color: var(--color-6);
+}
+
+.advert{
+    background-color: var(--color-8);
+    border-color: var(--color-6);
+}
+
+.footer{
+    background-color: var(--color-2);
+    border-color: var(--color-6);
 }
