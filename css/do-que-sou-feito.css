@@ -3,3 +3,80 @@ body{
     background-size: cover;
     background-position-y: center;
 }
+
+.caixa-pessoa{
+    width: 50%;
+    max-width: 300px;
+    border: 10px double var(--color-4) ;
+    background-color: var(--color-2)
+
+}
+
+.div-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.little-text{
+    font-size: x-small;
+}
+
+.content{
+
+
+}
+
+
+.justify{
+    text-align: justify;
+}
+
+.outra-fonte{
+    font-family: "Yuji+Boku";
+    background-color: var(--color-2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px double;
+}
+
+.img-aleatoria{
+    width: 32%;
+    height: 32%;
+    padding: 5px;
+
+}
+
+/*----------------------------------------------------------*/
+
+.advert > ul{
+  margin: 0px;
+  padding: 0px 8%;
+  list-style-position: outside;
+  list-style-type: none;
+  
+}
+
+.advert > ul > li{
+  margin: 15px 0px; 
+  width: 100%;
+  
+}
+
+.advert > ul > li > a{
+  text-decoration: none;
+  background-color: var(--color-9);
+  color: var(--color-10);
+  border-radius: 10px;
+  
+  display: inline-block;
+  width: 90%;
+  padding: 8px;
+}
+
+.advert > ul > li > a:hover{
+  transform: scale(1.1);
+  color: var(--color-9);
+  background-color: var(--color-10);
+}

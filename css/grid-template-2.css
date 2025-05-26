@@ -4,6 +4,7 @@ main{
     justify-content: center;
     align-content: start;
     padding: 5px 0px;
+    height: fint-content;
 
     outline: dashed 4px var(--color-2);
 

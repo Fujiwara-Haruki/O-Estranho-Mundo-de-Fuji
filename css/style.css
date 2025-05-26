@@ -10,6 +10,8 @@
   --color-6: #656769;
   --color-7: #f5c27f;
   --color-8: #aff2f5;
+  --color-9: #74a2d1;
+  --color-10: #1b4774;
 }
 
 body {
@@ -79,6 +81,12 @@ body {
 
     border: dashed 3px var(--color-1);
     background-color: var(--color-3);
+
+    overflow-x: hidden;
+    overflow-y:auto;
+
+    padding: 5% 15%;
+
   }
 
 .sidenav{
