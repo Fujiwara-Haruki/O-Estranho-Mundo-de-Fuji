@@ -1,15 +1,15 @@
 body{
-    background-image: url(../images/casa-fundo.png);
+    background-image: url(../images/computer-background.png);
     background-size: cover;
     background-position-y: center;
 }
 
-.caixa-pessoa{
-    width: 50%;
-    max-width: 300px;
-    border: 10px double var(--color-4) ;
-    background-color: var(--color-2)
-
+.content{
+  background-image: url(../images/wolves-sitting-on-a-tree-sergei-pankejeff-1964.jpg);
+  background-size: cover;
+  background-blend-mode:darken ;    
+  background-position: center;
+  color: var(--color-8)
 }
 
 .div-img{
@@ -24,23 +24,21 @@ body{
 }
 
 
+
 .justify{
-    text-align: justify;
+  text-align: justify;
 }
 
 .outra-fonte{
-    font-family: "Yuji+Boku";
-    background-color: var(--color-2);
-    padding: 20px;
-    border-radius: 10px;
-    border: 10px double;
+  font-family: "Yuji+Boku";
+  background-color: var(--color-10);
+  padding: 20px;
+  border-radius: 10px;
+  border: 10px double;
 }
 
-.img-aleatoria{
-    width: 32%;
-    height: 32%;
-    padding: 5px;
-
+.outra-fonte > a{
+  color: var(--color-8);
 }
 
 /*----------------------------------------------------------*/
